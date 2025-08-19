@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./all.css">
+    <title>Vite App</title>
+   <link rel="stylesheet" href="./weather.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+         <div class="location">
+          <img src="./src/assets/location.svg" alt="">
+          <p class="city">London</p>
+         </div>
+         <div class="date">
+          <p class="date-month">August 12</p>
+          <p class="week-day">Tuesday</p>
+         </div>
+         <div class="temp">
+          <img src="./src/assets/thermostate.svg" alt="">
+          <p class="current-temp">25&deg;</p>
+         </div>
+         <div class="feel">
+          <p class="feel-like">Feel like 20&deg;</p>
+         </div>
+      </div>
+      <div class="center">
+        <img class="info" src="./src/assets/day-and-night.png" alt="">
+        <div class="current-situation" style="padding-bottom: 20px; text-align: center;">Cloudy</div>
+      </div>
+      <div class="search">
+          <input type="text" class="search-input search-input-div" id="search" placeholder="Search location..." minlength="3"  >
+          <ul class="cities search-input-div">
+
+          </ul>
+          <div class="search-loader-div search-input-div">
+            <div class="load">
+              <div class="loader-search">
+               </div>
+            </div>
+          </div>
+          <div class="error-message search-input-div">
+            Invalid (plz enter atleast 3 character)
+          </div>
+          <div class="rise">
+            <img class="rise-img" src="./src/assets/sunrise.svg" alt="">
+            <p class="sunrise">Sunrise</p>
+          </div>
+          <div class="rise">
+            <img class="rise-img" src="./src/assets/sunset.svg" alt="">
+            <p class="sunset">Sunset</p>
+          </div>
+          <div class="rise">
+            <img class="rise-img" src="./src/assets/humidity.svg" alt="">
+            <p class="humidity">60%</p>
+          </div>
+          <div class="rise">
+            <img class="rise-img" src="./src/assets/air.svg" alt="">
+            <p class="wind_kph">10km/h</p>
+          </div>
+          <div class="rise">
+            <img class="rise-img"  src="./src/assets/wind-direction.svg" alt="">          
+            <p class="wind_dir">North East</p>
+          </div>
+          <div class="rise">
+            <img class="rise-img" src="./src/assets/pressure.svg" alt="">
+            <p class="pressure_mb">1023.0 mb</p>
+          </div>
+      </div>
+      <div class="week-details">
+        
+      </div>
+      </div>
+      <div class="my-loader-div">
+       <div class="load">
+        <div class="loader">
+
+        </div>
+       </div>
+       
+
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
